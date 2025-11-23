@@ -1,0 +1,83 @@
+web:
+  port: 8080
+auth:
+  password: "changeme"
+  staff:
+    - "LinuxDEV"
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "linuxac"
+  user: "root"
+  password: ""
+  ssl: false
+webhook:
+  url: ""
+messages:
+  ban_permanent: "&cSeu acesso ao nosso servidor está bloqueado!\n&7Jogador: &e{player}\n&7Motivo: &e{reason}\n&7Ban por: &e{staff}\n&7Expira: &eNunca\n&8Linux AntiCheat"
+  ban_temporary: "&6Você foi TEMPBANIDO do servidor\n&7Jogador: &e{player}\n&7Motivo: &e{reason}\n&7Ban por: &e{staff}\n&7Expira: &e{expires}\n&8Linux AntiCheat"
+  kick: "&cVocê foi desconectado\n&7Motivo: &e{reason}\n&8Linux AntiCheat"
+checks:
+  speed:
+    buffer_flag: 8.0
+    buffer_decay: 0.25
+    sprint_limit: 0.36
+    walk_limit: 0.28
+    air_bonus: 0.06
+    ice_bonus: 0.18
+    soulsand_penalty: -0.10
+    stairs_bonus: 0.06
+    combat_grace_ms: 600
+  cps:
+    max_cps: 18
+  reach:
+    limit: 3.6
+  nofall:
+    min_drop: 3.5
+    damage_grace_ms: 1200
+  timer:
+    max_actions_per_second: 24
+  noslow:
+    min_slow_factor: 0.6
+  inventorymove:
+    enabled: false
+    allow_sneak: true
+    move_threshold: 0.12
+    buffer_flag: 3.0
+    buffer_decay: 0.5
+  fastuse:
+    min_use_ms: 1400
+  fastplace:
+    max_blocks_per_second: 10
+  ka_rate:
+    max_hits_per_second: 16
+  jesus:
+    samples: 8
+    max_flat_ticks: 6
+  fly:
+    max_air_ticks: 18
+  antikb:
+    min_knockback_ratio: 0.2
+  autosneak:
+    min_toggle_ms: 400
+  step:
+    max_step_height: 1.1
+  fastladder:
+    max_ladder_speed: 0.45
+  fastbow:
+    min_draw_ms: 300
+  criticals:
+    enabled: false
+    min_fall_distance: 0.1
+  badpackets_position:
+    max_horizontal_per_tick: 1.2
+  badpackets_look:
+    enabled: false
+    max_yaw_delta: 180
+    max_pitch_delta: 50
+  scaffold:
+    max_place_angle_deg: 80
+  autoarmor:
+    min_swap_ms: 250
+  fastheal:
+    max_heal_events_per_10s: 8

@@ -1,0 +1,39 @@
+name: Linux
+main: com.linux.cheat.main.Main
+version: 0.1
+author: LinuxDEV
+website: https://example.com
+commands:
+  sban:
+    description: Ban permanente
+    usage: /sban <jogador> <motivo>
+    permission: linuxac.ban
+  tban:
+    description: Ban temporário
+    usage: /tban <jogador> <tempo><s|m|h|d> <motivo>
+    permission: linuxac.ban
+  unban:
+    description: Remover ban
+    usage: /unban <jogador>
+    permission: linuxac.ban
+  logs:
+    description: Consultar logs do jogador
+    usage: /logs <jogador> [limite]
+    permission: linuxac.logs
+  kick:
+    description: Expulsar um jogador com motivo
+    usage: /kick <jogador> <motivo>
+    permission: linuxac.kick
+permissions:
+  linuxac.notify:
+    description: Recebe notificações do anticheat
+    default: op
+  linuxac.ban:
+    description: Pode banir, tempban e unban
+    default: op
+  linuxac.logs:
+    description: Pode consultar logs de jogadores
+    default: op
+  linuxac.kick:
+    description: Pode expulsar jogadores
+    default: op
